@@ -188,7 +188,7 @@ impl State {
 
         self.player.render(ctx);
         ctx.print(35, 0, "Press SPACE to fly up.");
-        ctx.print(35, 0, &format!("Score: {}", self.score));
+        ctx.print(35, 1, &format!("Score: {}", self.score));
 
         self.obstacle.render(ctx, self.player.x);
 
